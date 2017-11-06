@@ -3,26 +3,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Project SchoolTool</title>
 </head>
 <body>
-
-<span class="badge badge-pill badge-primary">Primary</span>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-	<h1>Hi
-<% 
-String name = request.getParameter("name");
-if(name != null && name.length() > 0) {
-	out.println(name);	
-} else {
-	out.println("Welt");	
-}	
-%>	
-<h2>Das ist der erste Test</h2>
-!</h1>
-
+<body style="background-color:powderblue;">
+	<h1>Hello World! Yaaay</h1>
+		<form action="Index.jsp" method="post">
+		Name eingeben: <input type="text" name="name" />
+		<input type="submit" name="submit" value="OK" /> 
+	</form>
 </body>
 </html>
