@@ -4,16 +4,22 @@
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Project SchoolTool</title>
 </head>
 <body>
 <body style="background-color:powderblue;">
-	<h1>Hello World! Yaaay</h1>
-		<form action="Index.jsp" method="post">
+	<h1>Hello World!</h1>
+		<form action="Mainpage.jsp" method="post">
 		Name eingeben: <input type="text" name="name" />
 		<input type="submit" name="submit" value="OK" /> 
 	</form>
+	<img src="..." alt="..." class="rounded-circle">
+	<p><a href="#" class="text-light bg-dark">Light link</a></p>
+	<p><a href="#" class="text-warning">Warning link</a></p>
+	<div class="container">
+  TEEEST
+</div>
 </body>
 </html>
