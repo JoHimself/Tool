@@ -15,12 +15,12 @@
 Connection con;
 Class.forName("com.mysql.jdbc.Driver");
 con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/tool", "root", "root");
-PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from blaa");
+PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from Notizen");
 ResultSet rs=ps.executeQuery();
 while(rs.next()){
-	String username=rs.getString("1strow");
-	String password=rs.getString("2ndrow");
-	out.println("Erste Spalte "+username+" Zweite Spalte "+password+"<hr>");
+	String nummer=rs.getString("Nummer");
+	String inhalt=rs.getString("Inhalt");
+	out.println("Nummer "+nummer+" Inhalt "+inhalt+"<hr>");
 }
 %>
 </body>

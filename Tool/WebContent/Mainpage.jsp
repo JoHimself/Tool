@@ -14,28 +14,17 @@
 </head>
 <body>
 <body style="background-color:powderblue;">
+	<h1>Hi
 <% 
-try {
-String connectionURL = "jdbc:mysql://localhost:3306/tool"; 
-
-Connection connection = null; 
-
-Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-
-connection = DriverManager.getConnection(connectionURL, "root", "root");
-
-if(!connection.isClosed())
-%>
-<% 
-out.println("Successfully connected to " + "MySQL server using TCP/IP...");
-connection.close();
-}
-catch(Exception ex){
-%>
-<%
-ex.printStackTrace();
-out.println("Unable to connect to database.");
-}
-%>
+String name = request.getParameter("name");
+if(name != null && name.length() > 0) {
+	out.println(name);	
+} else {
+	out.println("World");	
+}	
+%>	
+</h1>
+<h2> TODO: Mainpage füllen</h2>
+</body>
 </body>
 </html>

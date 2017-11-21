@@ -89,9 +89,9 @@
     <!-- Page Content -->
     <section class="py-5">
       <div class="container">
-        <h1>Hier kommt noch Inhalt rein</h1>
+        <h1>Coming soon</h1>
         <form action="Mainpage.jsp" method="post">
-			Name eingeben: <input type="text" name="name" />
+			Dein Name: <input type="text" name="name" />
 		<input type="submit" name="submit" value="OK" /> 
 	</form>
         <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
