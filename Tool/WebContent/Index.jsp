@@ -90,7 +90,7 @@
     <section class="py-5">
       <div class="container">
         <h1>Coming soon</h1>
-        <form action="Mainpage.jsp" method="post">
+        <form action="mainpage.html" method="post">
 			Dein Name: <input type="text" name="name" />
 		<input type="submit" name="submit" value="OK" /> 
 	</form>
