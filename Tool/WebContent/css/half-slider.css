@@ -13,3 +13,23 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+
+ .projekt {
+	font-size: 96px;
+	font-weight: 700;
+	font-family: 'Saira Extra Condensed', serif;
+	text-transform: uppercase;
+	
+}
+
+
+.schooltool {
+	font-size: 100px;
+	font-weight: 700;
+	font-family: 'Saira Extra Condensed', serif;
+	text-transform: uppercase;
+	color: #BD5D38
+	
+}
+ 

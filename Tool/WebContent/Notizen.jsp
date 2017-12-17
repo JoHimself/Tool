@@ -56,6 +56,12 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="StundenplanForm.jsp">Stunden eintragen</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -70,11 +76,28 @@ con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/tool", 
 PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from notizen");
 ResultSet rs=ps.executeQuery();
 while(rs.next()){
-	String nummer=rs.getString("nummer");
+	String id =rs.getString("id");
 	String inhalt=rs.getString("inhalt");
-	out.println("Nummer "+nummer+" Inhalt "+inhalt+"<hr>");
+	String datum =rs.getString("datum");
+	// out.println("Datum "+datum+" Inhalt "+inhalt+"<hr>");
+	%>
+	<div class="tables">
+    <TABLE BORDER="1" cellpadding="5">
+        <TR>
+            <TH width="20">Eintragsnummer</TH>
+            <TH width="200; height: auto">Inhalt</TH>
+            <TH width="100">Datum</TH>
+        </TR>
+        <TR>
+            <TD> <%= rs.getString(1) %> </TD>
+            <TD> <%= rs.getString(2) %> </TD>
+            <TD> <%= rs.getString(3) %> </TD>
+        </TR>
+    </TABLE>
+    </div>
+<% 
 }
-%>
+    %>
       </section>
 
 

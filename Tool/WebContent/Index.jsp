@@ -8,47 +8,39 @@
 <html>
 <head>
 
-    <title>Project School Tool</title>
+	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/half-slider.css" rel="stylesheet">
+    
+    
 
   </head>
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">School Tool</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('https://image.freepik.com/free-photo/blackboard_1205-374.jpg')">
             <div class="carousel-caption d-none d-md-block">
+   
+
+		<div class="projekt">
+          <font>Projekt</font>
+          </div>
+          <div class="schooltool">
+            <span>School Tool</span>
+            </div>
+          
+ 
             </div>
           </div>
-        </div>
-      </div>
+
+
     </header>
     <section class="py-5">
       <div class="container">
@@ -62,11 +54,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>User Name</td>
+                        <td>Dein Name</td>
                         <td><input type="text" name="uname" value="" /></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td>Passwort</td>
                         <td><input type="password" name="pass" value="" /></td>
                     </tr>
                     <tr>
@@ -74,7 +66,7 @@
                         <td><input type="reset" value="Reset" /></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Yet Not Registered!! <a href="reg.jsp">Register Here</a></td>
+                        <td colspan="2">Du bist noch nicht registriert <a href="reg.jsp">Hier entlang</a></td>
                     </tr>
                 </tbody>
             </table>

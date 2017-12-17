@@ -57,6 +57,12 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="StundenplanForm.jsp">Stunden eintragen</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -75,9 +81,27 @@ while(rs.next()){
 	String fach=rs.getString("Fach");
 	int note=rs.getInt("Note");
 	String dozent=rs.getString("Dozent");
-	out.println("Halbjahr "+halbjahr+" Fach "+fach+ " Note" +note+ "Dozent" +dozent+"<hr>");
+	// out.println("Halbjahr "+halbjahr+" \n Fach "+fach+ " \n Note" +note+ " \n Dozent" +dozent+"<hr>");
+	%>
+	<div class="tables">
+                    <TABLE BORDER="1" cellpadding="5">
+                        <TR>
+                            <TH width="50">Halbjahr</TH>
+                            <TH width="200">Fach</TH>
+                            <TH width="50">Note</TH>
+                            <TH width="200">Dozent</TH>
+                        </TR>
+                        <TR>
+                            <TD> <%= rs.getString(1) %> </TD>
+                            <TD> <%= rs.getString(2) %> </TD>
+                            <TD> <%= rs.getString(3) %> </TD>
+                            <TD> <%= rs.getString(4) %> </TD>
+                        </TR>
+                    </TABLE>
+                    </div>
+                <% 
 }
-%>
+                    %>
       </section>
 
 
