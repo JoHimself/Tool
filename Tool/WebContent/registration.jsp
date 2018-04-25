@@ -1,7 +1,7 @@
 <%@ page import ="java.sql.*" %>
 <%
-    String user = request.getParameter("uname");    
-    String pwd = request.getParameter("pass");
+    String uname = request.getParameter("uname");    
+    String pass = request.getParameter("pass");
     String fname = request.getParameter("fname");
     String lname = request.getParameter("lname");
     String email = request.getParameter("email");
@@ -10,7 +10,7 @@
             "root", "root");
     Statement st = con.createStatement();
     //ResultSet rs;
-    int i = st.executeUpdate("insert into members(first_name, last_name, email, uname, pass, regdate) values ('" + fname + "','" + lname + "','" + email + "','" + user + "','" + pwd + "', CURDATE())");
+    int i = st.executeUpdate("insert into members(uname, pass, first_name, last_name, email) values ('" + uname + "','" + pass + "','" + fname + "','" + lname + "','" + email + "')");
     if (i > 0) {
         //session.setAttribute("userid", user);
         response.sendRedirect("Index.jsp");

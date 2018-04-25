@@ -45,10 +45,10 @@
             <a class="nav-link js-scroll-trigger" href="mainpage.jsp">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Noten.jsp">Noten anzeigen</a>
+            <a class="nav-link js-scroll-trigger" href="Noten.jsp">Projekte anzeigen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Noten eintragen</a>
+            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekt anlegen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>

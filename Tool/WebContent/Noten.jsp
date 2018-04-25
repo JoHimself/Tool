@@ -74,28 +74,27 @@
 Connection con;
 Class.forName("com.mysql.jdbc.Driver");
 con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/tool", "root", "root");
-PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT Halbjahr, Fach, Note, Dozent from noten");
+PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT projektname, uname, projektbezeichung from projekte");
 ResultSet rs=ps.executeQuery();
 while(rs.next()){
-	String halbjahr=rs.getString("Halbjahr");
-	String fach=rs.getString("Fach");
-	int note=rs.getInt("Note");
-	String dozent=rs.getString("Dozent");
+	String uname=rs.getString("projektname");
+	String projektname=rs.getString("uname");
+	String projektbezeichnung=rs.getString("projektbezeichnung");
+	
 	// out.println("Halbjahr "+halbjahr+" \n Fach "+fach+ " \n Note" +note+ " \n Dozent" +dozent+"<hr>");
 	%>
 	<div class="tables">
                     <TABLE BORDER="1" cellpadding="5">
                         <TR>
-                            <TH width="50">Halbjahr</TH>
-                            <TH width="200">Fach</TH>
-                            <TH width="50">Note</TH>
-                            <TH width="200">Dozent</TH>
+                            <TH width="50">projektname</TH>
+                            <TH width="200">uname</TH>
+                            <TH width="50">projektbezeichung</TH>
                         </TR>
                         <TR>
                             <TD> <%= rs.getString(1) %> </TD>
                             <TD> <%= rs.getString(2) %> </TD>
                             <TD> <%= rs.getString(3) %> </TD>
-                            <TD> <%= rs.getString(4) %> </TD>
+                            
                         </TR>
                     </TABLE>
                     </div>

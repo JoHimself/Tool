@@ -49,7 +49,7 @@
             <a class="nav-link js-scroll-trigger" href="Noten.jsp">Noten anzeigen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Noten eintragen</a>
+            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekt anlegen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
@@ -76,21 +76,21 @@
             <table border="1" width="30%" cellpadding="10">
                 <thead>
                     <tr>
-                        <th colspan="2">Noten</th>
+                        <th colspan="2">Projekte</th>
                     </tr>
                 </thead>
                 <tbody>
                      <tr>
-                        <td>Halbjahr</td>
-                        <td><input type="text" name="halbjahr" value="" /></td>
+                        <td>Projektname</td>
+                        <td><input type="text" name="Projektname" value="" /></td>
                     </tr>
                     <tr>
-                        <td>Fach</td>
-                        <td><input type="text" name="fach" value="" /></td>
+                        <td>Benutzername</td>
+                        <td><input type="text" name="Benutzername" value="" /></td>
                     </tr>
                     <tr>
-                        <td>Note</td>
-                        <td><input type="text" name="note" value="" /></td>
+                        <td>Projektbezeichung</td>
+                        <td><input type="text" name="Projektbezeichnung" value="" /></td>
                     </tr>
                     <tr>
                         <td>Dozent</td>
