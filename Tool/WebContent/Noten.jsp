@@ -71,14 +71,16 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
 <%
+String userid = request.getParameter("uname");
+String test = "sergej";
 Connection con;
 Class.forName("com.mysql.jdbc.Driver");
 con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/tool", "root", "root");
-PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT projektname, uname, projektbezeichung from projekte");
+PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from projekte where uname = '" + test + "'"  );
 ResultSet rs=ps.executeQuery();
 while(rs.next()){
-	String uname=rs.getString("projektname");
-	String projektname=rs.getString("uname");
+	String uname=rs.getString("uname");
+	String projektname=rs.getString("projektname");
 	String projektbezeichnung=rs.getString("projektbezeichnung");
 	
 	// out.println("Halbjahr "+halbjahr+" \n Fach "+fach+ " \n Note" +note+ " \n Dozent" +dozent+"<hr>");
@@ -87,8 +89,8 @@ while(rs.next()){
                     <TABLE BORDER="1" cellpadding="5">
                         <TR>
                             <TH width="50">projektname</TH>
-                            <TH width="200">uname</TH>
-                            <TH width="50">projektbezeichung</TH>
+                            <TH width="200">projektbezeichung</TH>
+                            <TH width="50">uname</TH>
                         </TR>
                         <TR>
                             <TD> <%= rs.getString(1) %> </TD>
