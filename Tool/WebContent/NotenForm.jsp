@@ -46,10 +46,10 @@
             <a class="nav-link js-scroll-trigger" href="mainpage.jsp">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Noten.jsp">Noten anzeigen</a>
+            <a class="nav-link js-scroll-trigger" href="Noten.jsp">Projekte anzeigen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekt anlegen</a>
+            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp"><font color="white">Projekt anlegen</a></font>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
@@ -57,12 +57,15 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
-            <li class="nav-item">
+          <!-- 
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="StundenplanForm.jsp">Stunden eintragen</a>
           </li>
+           -->
+            
         </ul>
       </div>
     </nav>
@@ -92,10 +95,10 @@
                         <td>Projektbezeichung</td>
                         <td><input type="text" name="Projektbezeichnung" value="" /></td>
                     </tr>
-                    <tr>
-                        <td>Dozent</td>
+                   <!-- <tr> >
+                   		<td>Dozent</td>
                         <td><input type="text" name="dozent" value="" /></td>
-                    </tr>
+                    </tr> --> 
                         <td><input type="submit" value="Submit" /></td>
                         <td><input type="reset" value="Reset" /></td>
                     </tr>

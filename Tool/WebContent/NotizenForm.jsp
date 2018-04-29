@@ -55,14 +55,17 @@
             <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
+            <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp"><font color="white">Notiz anlegen</a></font>
           </li>
+          <!--  
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="StundenplanForm.jsp">Stunden eintragen</a>
           </li>
+          -->
+          
         </ul>
       </div>
     </nav>
@@ -80,6 +83,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                	<tr>
+                        <td>Projektname</td>
+                        <td><input type="text" name="Projektname" value="" /></td>
+                    </tr>
                     <tr>
                         <td>Hier kannst du eine Notiz anlegen:</td>
                         <td><input type="text" name="inhalt" style="width:400px; height:400px;" value="" /></td>

@@ -44,7 +44,7 @@
     </header>
     <section class="py-5">
       <div class="container">
-        <form method="post" action="login.jsp">
+        <form method="post" action="login.jsp" action= "Noten.jsp">
             <center>
             <table>
                 <thead>

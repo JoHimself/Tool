@@ -42,13 +42,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
                   <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="mainpage.jsp">Home</a>
+            <a class="nav-link js-scroll-trigger" href="mainpage.jsp"><font color="white">Home</a></font>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Noten.jsp">Projekte anzeigen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekt anlegen</a>
+            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekte anlegen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
@@ -56,12 +56,17 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
+          <!-- 
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="StundenplanForm.jsp">Stunden eintragen</a>
           </li>
+          
+           -->
+          
         </ul>
       </div>
     </nav>
@@ -69,8 +74,11 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0"><font color="white">Projekt</font>
+          <h1 class="mb-0"><font color="white">Projektmanagement</font>
+            <!-- 
             <span class="text-primary">School Tool</span>
+             -->
+            
           </h1> 
           <div class="subheading mb-5">Willkommen <%=session.getAttribute("userid") %>, dies ist ein Projekt von Sergej Bielke und Jonas Hilberg
           </div>

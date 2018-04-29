@@ -46,10 +46,10 @@
             <a class="nav-link js-scroll-trigger" href="mainpage.jsp">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Noten.jsp">Noten anzeigen</a>
-          </li>
+            <a class="nav-link js-scroll-trigger" href="Noten.jsp"><font color="white">Projekte anzeigen</a></font>
+          </li>			
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Noten eintragen</a>
+            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekte anlegen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
@@ -57,12 +57,16 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
+          
+          <!-- 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="StundenplanForm.jsp">Stunden eintragen</a>
           </li>
+           -->
+          
         </ul>
       </div>
     </nav>
@@ -71,17 +75,19 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
 <%
-String userid = request.getParameter("uname");
+
+String userid = request.getParameter("uname");    
 String test = "sergej";
 Connection con;
 Class.forName("com.mysql.jdbc.Driver");
 con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/tool", "root", "root");
-PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from projekte where uname = '" + test + "'"  );
+PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from projekte where uname = '" + userid + "'"  );
 ResultSet rs=ps.executeQuery();
 while(rs.next()){
 	String uname=rs.getString("uname");
 	String projektname=rs.getString("projektname");
 	String projektbezeichnung=rs.getString("projektbezeichnung");
+	String notiz=rs.getString("notiz");
 	
 	// out.println("Halbjahr "+halbjahr+" \n Fach "+fach+ " \n Note" +note+ " \n Dozent" +dozent+"<hr>");
 	%>
@@ -91,12 +97,13 @@ while(rs.next()){
                             <TH width="50">projektname</TH>
                             <TH width="200">projektbezeichung</TH>
                             <TH width="50">uname</TH>
+                            <TH width="200">notiz</TH>
                         </TR>
                         <TR>
                             <TD> <%= rs.getString(1) %> </TD>
                             <TD> <%= rs.getString(2) %> </TD>
                             <TD> <%= rs.getString(3) %> </TD>
-                            
+                            <TD> <%= rs.getString(4) %> </TD>                            
                         </TR>
                     </TABLE>
                     </div>
