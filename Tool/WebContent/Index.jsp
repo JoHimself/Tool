@@ -30,10 +30,10 @@
    
 
 		<div class="projekt">
-          <font>Projekt</font>
+          <font>Projektmanagement</font>
           </div>
           <div class="schooltool">
-            <span>School Tool</span>
+            <span>Login</span>
             </div>
           
  
@@ -66,7 +66,7 @@
                         <td><input type="reset" value="Reset" /></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Du bist noch nicht registriert <a href="reg.jsp">Hier entlang</a></td>
+                        <td colspan="2">Du bist noch nicht registriert. <a href="reg.jsp">Hier entlang</a></td>
                     </tr>
                 </tbody>
             </table>

@@ -49,16 +49,17 @@
             <a class="nav-link js-scroll-trigger" href="Noten.jsp"><font color="white">Projekte anzeigen</a></font>
           </li>			
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekte anlegen</a>
+            <a class="nav-link js-scroll-trigger" href="NotenForm.jsp">Projekt anlegen</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
           
           <!-- 
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
           </li>
@@ -81,7 +82,7 @@ String test = "sergej";
 Connection con;
 Class.forName("com.mysql.jdbc.Driver");
 con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/tool", "root", "root");
-PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from projekte where uname = '" + userid + "'"  );
+PreparedStatement ps=(PreparedStatement)con.prepareStatement("SELECT * from projekte where uname = '" + test + "'"  ); //Hier muss noch geändert werden das hier der loginname benutzt wird.
 ResultSet rs=ps.executeQuery();
 while(rs.next()){
 	String uname=rs.getString("uname");
@@ -92,7 +93,7 @@ while(rs.next()){
 	// out.println("Halbjahr "+halbjahr+" \n Fach "+fach+ " \n Note" +note+ " \n Dozent" +dozent+"<hr>");
 	%>
 	<div class="tables">
-                    <TABLE BORDER="1" cellpadding="5">
+                    <TABLE BORDER="2" cellpadding="2">
                         <TR>
                             <TH width="50">projektname</TH>
                             <TH width="200">projektbezeichung</TH>

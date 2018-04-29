@@ -51,13 +51,14 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotenForm.jsp"><font color="white">Projekt anlegen</a></font>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="NotizenForm.jsp">Notiz anlegen</a>
           </li>
           <!-- 
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Notizen.jsp">Notizen anzeigen</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="Stundenplan.jsp">Stundenplan anzeigen</a>
           </li>
